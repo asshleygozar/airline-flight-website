@@ -24,7 +24,11 @@ body {
     flex-direction: column;
     flex: 1;
 }
-
+.content .home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 nav {
     height: 80px;
 }
