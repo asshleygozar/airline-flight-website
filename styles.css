@@ -46,7 +46,7 @@ nav .navigation-view {
     font-size: 30px;
     font-weight: 900;
     font-family: "Poppins", sans-serif;
-    color: rgb(18, 161, 161);
+    color: white;
 
 }
 .navigation-view ul {
@@ -63,6 +63,9 @@ nav .navigation-view {
 .navigation-view ul li a {
     font-family: "Poppins", sans-serif;
     text-decoration: none;
-    color: rgb(18, 161, 161);
+    color: white;
 }
 
+.home-page {
+    background-image: linear-gradient(to bottom right, #185a9d, #43cea2);
+}
