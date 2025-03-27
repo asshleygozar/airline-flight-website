@@ -133,11 +133,21 @@ nav .navigation-view {
 
 .second-section .boxes {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     margin-top: 3em;
 }
 
-
+.second-section .boxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10em;
+    height: 12em;
+    border: 2px solid #1fcaf1;
+    border-radius: 1em;
+}
 
