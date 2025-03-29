@@ -37,13 +37,13 @@ nav .navigation-view {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 1em 2em;
+    padding: 1em 1em;
     max-width: 70em;
     margin: 0 auto;
 }
 .navigation-view .main-logo {
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 800;
     font-family: "Poppins", sans-serif;
     color: #1fcaf1;
 
@@ -60,8 +60,9 @@ nav .navigation-view {
 
 .navigation-view ul li a {
     font-family: "Poppins", sans-serif;
+    font-weight: 500;
     text-decoration: none;
-    color: #1fcaf1;
+    color: black;
 }
 
 .home-page {
@@ -77,7 +78,7 @@ nav .navigation-view {
     align-items: center;
     justify-content: center;
     gap: 2em;
-    max-width: 50em;
+    max-width: 95%;
     width: 90%;
     height: 22em;
     margin: 10px auto;
@@ -94,9 +95,11 @@ nav .navigation-view {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 58px;
+    line-height: 1.2;
     color: white;
 }
+
 
 .home-section p {
     text-align: center;
@@ -121,7 +124,7 @@ nav .navigation-view {
     max-width: 70em;
     width:  93%;
     align-items: center;
-    margin: 3em auto;
+    margin: 2em auto;
 }
 
 .second-section .header{
@@ -129,7 +132,14 @@ nav .navigation-view {
     font-size: 36px;
     font-weight: 600;
     align-self: flex-start;
-    
+}
+
+.second-section .sub-header{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    align-self: flex-start;
 }
 
 .second-section .boxes {
@@ -140,7 +150,7 @@ nav .navigation-view {
     align-items: center;
     width: 100%;
     margin-top: 2em;
-    padding:  0 1em;
+    
 }
 
 .second-section .boxes .box img {
@@ -155,6 +165,7 @@ nav .navigation-view {
 
 .second-section .boxes .box .place-description {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     margin-top: 10px;
@@ -163,7 +174,14 @@ nav .navigation-view {
     height: 20%;
 }
 
-.place-description i {
+
+
+.place-location {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.place-location i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,8 +196,14 @@ nav .navigation-view {
     background-color: #1fcaf1;
 }
 
-.place-description p {
+.place-location p {
     font-family: "Poppins",sans-serif;
     font-size: 14px;
 }
 
+@media(max-width: 760px) {
+
+    .home-section div .header {
+        font-size: 42px;
+    }
+}
