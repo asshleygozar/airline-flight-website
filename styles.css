@@ -45,7 +45,7 @@ nav .navigation-view {
     font-size: 30px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
-    color: #1fcaf1;
+    color: white;
 
 }
 .navigation-view ul {
@@ -62,14 +62,19 @@ nav .navigation-view {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .home-page {
     display: flex;
     flex-direction: column;
     background-color: white;
+    width: 100%;
+    background-image: url("./images/summer_vacation.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 600px;
+    flex: 1;
 }
 
 .home-section {
@@ -81,13 +86,13 @@ nav .navigation-view {
     max-width: 95%;
     width: 90%;
     height: 22em;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 16px;
     border-radius: 20px;
-    background-image: url("./images/main_beach.jpg");
+    /*background-image: url("./images/summer_vacation.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    //*background-image: linear-gradient(to bottom right, #185a9d, #43cea2);**/
+    background-size: cover;*/
+    /*background-image: linear-gradient(to bottom right, #185a9d, #43cea2);*/
 }
 
 
@@ -104,7 +109,7 @@ nav .navigation-view {
 .home-section p {
     text-align: center;
     font-family: "Poppins",sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     color: whitesmoke;
 }
 .home-section button {
@@ -153,6 +158,11 @@ nav .navigation-view {
     
 }
 
+.second-section .boxes .box {
+    height: 270px;
+    width: 220px;
+}
+
 .second-section .boxes .box img {
     display: flex;
     flex-direction: column;
@@ -167,38 +177,30 @@ nav .navigation-view {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 5px;
     width: 10em;
     height: 20%;
 }
 
-
+.place-name {
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    align-self: flex-start;
+}
 
 .place-location {
     display: flex;
     align-items: center;
-    gap: 1em;
-}
-.place-location i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     align-self: flex-start;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    border-radius: 10em;
-    width: 2em;
-    height: 2em;
-    border: 1px solid #1fcaf1;
-    color: white;
-    background-color: #1fcaf1;
+    gap: 8px;
 }
 
 .place-location p {
     font-family: "Poppins",sans-serif;
+    font-weight: 500;
     font-size: 14px;
+    color: grey;
 }
 
 @media(max-width: 760px) {
